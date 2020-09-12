@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Kills all active python processes for the current user.
+# Useful when `torch.distributed` doesn't properly terminate, leaving 
+# zombie processes using the ports required for distributed training.
+
+pgrep -u $USER python | xargs kill -9

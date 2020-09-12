@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+# allennlp train training_config/simple.jsonnet -s chkpt -f
+allennlp train training_config/bert.jsonnet -s chkpt -f
